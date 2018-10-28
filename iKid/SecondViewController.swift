@@ -14,7 +14,13 @@ class SecondViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
-
+  
+  @IBOutlet weak var joke: UILabel!
+  @IBAction func nextClick(_ sender: UIButton) {
+    joke.text = "One looks at the other and says,\n “You know how to drive this thing?!”"
+    sender.isHidden = true
+  }
+  
 
 }
 

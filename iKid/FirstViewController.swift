@@ -15,6 +15,11 @@ class FirstViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
   }
 
-
+  @IBAction func nextClick(_ sender: UIButton) {
+    joke.text = "Don't call me later,\n call me Dad."
+    sender.isHidden = true
+  }
+  
+  @IBOutlet weak var joke: UILabel!
 }
 
